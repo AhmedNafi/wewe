@@ -1,0 +1,313 @@
+﻿<UserControl x:Class="CorrectionSystem.ucStudentsForStuAff"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CorrectionSystem"
+             mc:Ignorable="d" 
+             d:DesignHeight="771" d:DesignWidth="1240">
+    <Grid Height="771" Width="1240" IsVisibleChanged="Grid_IsVisibleChanged">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="386*"/>
+            <RowDefinition Height="385*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="btnHomeInStudentsPNL" Width="55" Height="55" Cursor="Hand" Margin="331,0,234,305" VerticalAlignment="Bottom" Grid.Column="1" Click="btnHomeInStudentsPNL_Click" MouseEnter="btnHomeInStudentsPNL_MouseEnter" MouseLeave="btnHomeInStudentsPNL_MouseLeave">
+            <Button.Background>
+                <ImageBrush ImageSource="Home-Orange.png"/>
+            </Button.Background>
+            <Button.Template>
+                <ControlTemplate>
+                    <Grid>
+                        <Ellipse x:Name="Ellipse" Fill="{TemplateBinding Background}" />
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="btnAddNewStudentsInStudentsPNL" Width="55" Height="55" Cursor="Hand" Margin="398,0,167,305" VerticalAlignment="Bottom" Grid.Column="1" Click="btnAddNewStudentsInStudentsPNL_Click" MouseEnter="btnAddNewStudentsInStudentsPNL_MouseEnter" MouseLeave="btnAddNewStudentsInStudentsPNL_MouseLeave">
+            <Button.Background>
+                <ImageBrush ImageSource="Add-White.png"/>
+            </Button.Background>
+            <Button.Template>
+                <ControlTemplate>
+                    <Grid>
+                        <Ellipse Name="Ellipse" Fill="{TemplateBinding Background}" />
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="btnEditStudentsInStudentsPNL" Width="55" Height="55" Cursor="Hand" Margin="465,0,100,305" VerticalAlignment="Bottom" Grid.Column="1" Click="btnEditStudentsInStudentsPNL_Click" MouseEnter="btnEditStudentsInStudentsPNL_MouseEnter" MouseLeave="btnEditStudentsInStudentsPNL_MouseLeave">
+            <Button.Background>
+                <ImageBrush ImageSource="Edit-White.png"/>
+            </Button.Background>
+            <Button.Template>
+                <ControlTemplate>
+                    <Grid>
+                        <Ellipse Name="Ellipse" Fill="{TemplateBinding Background}" />
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="btnRemoveStudentsInStudentsPNL" Width="55" Height="55" Cursor="Hand" Margin="0,0,33,305" VerticalAlignment="Bottom" Grid.Column="1" HorizontalAlignment="Right" Click="btnRemoveStudentsInStudentsPNL_Click" MouseLeave="btnRemoveStudentsInStudentsPNL_MouseLeave" MouseEnter="btnRemoveStudentsInStudentsPNL_MouseEnter">
+            <Button.Background>
+                <ImageBrush ImageSource="Remove-White.png"/>
+            </Button.Background>
+            <Button.Template>
+                <ControlTemplate>
+                    <Grid>
+                        <Ellipse Name="Ellipse" Fill="{TemplateBinding Background}" />
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <StackPanel Name="stkPanelHomeStudentsForStuAff" Margin="0,200,0,0" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <Grid Height="571" Width="1240">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="286*"/>
+                    <RowDefinition Height="285*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="txtBoxSearchInDatagridInStudentsPNL" Style="{StaticResource placeHolder}" Tag="Search here" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="50" Margin="33,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1174" FontSize="25" KeyUp="txtBoxSearchInDatagridInStudentsPNL_KeyUp"/>
+                <Image HorizontalAlignment="Left" Height="29" Margin="47,16,0,0" VerticalAlignment="Top" Width="29" Source="Search.png"/>
+                <DataGrid x:Name="DGForStudents" RowHeaderWidth="45" Height="501" Margin="33,60,33,0" AutoGenerateColumns="True" ColumnWidth="*" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.RowSpan="2" Foreground="Black" HorizontalGridLinesBrush="Black" CanUserResizeRows="False" CanUserReorderColumns="False" Background="{x:Null}" AlternatingRowBackground="#FFE4F1EE" FontSize="20" SelectionUnit="CellOrRowHeader" AlternationCount="1" IsReadOnly="True" RowBackground="White" BorderBrush="{x:Null}" RowHeight="40" MinColumnWidth="200" LoadingRow="DGForStudents_LoadingRow" SelectionMode="Single" CanUserResizeColumns="False">
+                    <DataGrid.Resources>
+                        <Style BasedOn="{StaticResource {x:Type DataGridRowHeader}}" TargetType="{x:Type DataGridRowHeader}">
+                            <Setter Property="Background" Value="Black"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Height" Value="40"/>
+                            <Setter Property="FontSize" Value="18"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type DataGridRowHeader}">
+                                        <Grid Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+
+                        <Style TargetType="DataGridCell">
+                            <Style.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="Background" Value="#FFFFC459"/>
+                                </Trigger>
+                            </Style.Triggers>
+                            <Setter Property="BorderThickness" Value="0"/>
+                            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+                            <Setter Property="Padding" Value="8 5 0 0"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type DataGridCell}">
+                                        <Border Padding="{TemplateBinding Padding}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                                            <ContentPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                        <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="Background" Value="Black"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Height" Value="50"/>
+                            <Setter Property="FontSize" Value="20"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type DataGridColumnHeader}">
+                                        <Grid Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DataGrid.Resources>
+                </DataGrid>
+            </Grid>
+        </StackPanel>
+
+        <StackPanel Name="stkPanelAddStudentsForStuAff" Margin="0,200,0,0" Grid.RowSpan="2" Grid.ColumnSpan="2" Visibility="Hidden">
+            <Grid Height="571" Width="1240">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="286*"/>
+                    <RowDefinition Height="285*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Students ID:" HorizontalAlignment="Left" Margin="33,24,0,0" VerticalAlignment="Top" Width="258" Foreground="White" FontSize="28" FontWeight="Bold" Height="50"/>
+                <TextBox x:Name="txtBoxStudentsIDInStudentsPnl" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="50" Margin="296,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="908" FontSize="28" Padding="5,5,0,0"/>
+
+                <Label Content="Students Name:" HorizontalAlignment="Left" Margin="33,112,0,0" VerticalAlignment="Top" Width="258" Foreground="White" FontSize="28" FontWeight="Bold" Height="50"/>
+                <TextBox x:Name="txtBoxStudentsNameInStudentsPnl" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="50" Margin="296,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="908" FontSize="28" Padding="5,5,0,0"/>
+                <Button Style="{DynamicResource innerButtonsColors}" x:Name="btnSubmitAddNewStudents" Content="Add" HorizontalAlignment="Left" Margin="384,98,0,0" VerticalAlignment="Top" Width="200" Height="72" FontSize="30" FontWeight="Bold" Cursor="Hand" Grid.Column="1" AutomationProperties.Name="btnSubmitAddNewStudents" Click="btnSubmitAddNewStudents_Click" Grid.Row="1"/>
+                <Label Content="Academic Year ID:" HorizontalAlignment="Left" Margin="33,202,0,0" VerticalAlignment="Top" Width="258" Foreground="White" FontSize="28" FontWeight="Bold" Height="50"/>
+                <ComboBox x:Name="cmbBoxAcdYearIDInStudentsPnl" HorizontalAlignment="Left" Height="50" Margin="296,202,0,0" VerticalAlignment="Top" Width="278" FontSize="28" Padding="5,5,0,0" SelectionChanged="cmbBoxAcdYearIDInStudentsPnl_SelectionChanged" MaxDropDownHeight="340"/>
+                <Label Content="Academic Year Name:" HorizontalAlignment="Left" Margin="595,202,0,0" VerticalAlignment="Top" Width="304" Foreground="White" FontSize="28" FontWeight="Bold" Height="50" Grid.ColumnSpan="2"/>
+                <ComboBox x:Name="cmbBoxAcdYearNameInStudentsPnl" HorizontalAlignment="Left" Height="54" Margin="284,200,0,0" VerticalAlignment="Top" Width="300" FontSize="28" Padding="5,5,0,0" Grid.Column="1" SelectionChanged="cmbBoxAcdYearNameInStudentsPnl_SelectionChanged" MaxDropDownHeight="340"/>
+                <Label Content="Department ID:" HorizontalAlignment="Left" Margin="33,8,0,0" VerticalAlignment="Top" Width="258" Foreground="White" FontSize="28" FontWeight="Bold" Height="50" Grid.Row="1"/>
+                <ComboBox x:Name="cmbBoxDeptIDInStudentsPnl" HorizontalAlignment="Left" Height="50" Margin="296,8,0,0" VerticalAlignment="Top" Width="278" FontSize="28" Padding="5,5,0,0" SelectionChanged="cmbBoxDeptIDInStudentsPnl_SelectionChanged" MaxDropDownHeight="340" Grid.Row="1"/>
+                <Label Content="Department Name:" HorizontalAlignment="Left" Margin="595,8,0,0" VerticalAlignment="Top" Width="304" Foreground="White" FontSize="28" FontWeight="Bold" Height="50" Grid.ColumnSpan="2" Grid.Row="1"/>
+                <ComboBox x:Name="cmbBoxDeptNameInStudentsPnl" HorizontalAlignment="Left" Height="54" Margin="284,6,0,0" VerticalAlignment="Top" Width="300" FontSize="28" Padding="5,5,0,0" Grid.Column="1" SelectionChanged="cmbBoxDeptNameInStudentsPnl_SelectionChanged" MaxDropDownHeight="340" Grid.Row="1"/>
+            </Grid>
+        </StackPanel>
+
+        <StackPanel Name="stkPanelEditStudentsForStuAff" Margin="0,200,0,0" Grid.RowSpan="2" Grid.ColumnSpan="2"  Visibility="Hidden">
+            <Grid Height="571" Width="1240">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="286*"/>
+                    <RowDefinition Height="285*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="txtBoxSearchInDatagridInEditStudentsPNL" Style="{StaticResource placeHolder}" Tag="Search here" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="50" Margin="33,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1174" FontSize="25" KeyUp="txtBoxSearchInDatagridInEditStudentsPNL_KeyUp"/>
+                <Image HorizontalAlignment="Left" Height="29" Margin="47,16,0,0" VerticalAlignment="Top" Width="29" Source="Search.png"/>
+                <DataGrid x:Name="DGForStudentsInEdit" RowHeaderWidth="45" Height="501" Margin="33,60,33,0" AutoGenerateColumns="True" ColumnWidth="*" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.RowSpan="2" Foreground="Black" HorizontalGridLinesBrush="Black" CanUserResizeRows="False" CanUserReorderColumns="False" Background="{x:Null}" AlternatingRowBackground="#FFE4F1EE" FontSize="20" SelectionUnit="CellOrRowHeader" AlternationCount="1" IsReadOnly="True" RowBackground="White" BorderBrush="{x:Null}" RowHeight="40" MinColumnWidth="200" LoadingRow="DGForStudents_LoadingRow" SelectionMode="Single" CanUserResizeColumns="False">
+                    <DataGrid.Resources>
+                        <Style BasedOn="{StaticResource {x:Type DataGridRowHeader}}" TargetType="{x:Type DataGridRowHeader}">
+                            <Setter Property="Background" Value="Black"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Height" Value="40"/>
+                            <Setter Property="FontSize" Value="18"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type DataGridRowHeader}">
+                                        <Grid Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+
+                        <Style TargetType="DataGridCell">
+                            <Style.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="Background" Value="#FFFFC459"/>
+                                </Trigger>
+                            </Style.Triggers>
+                            <Setter Property="BorderThickness" Value="0"/>
+                            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+                            <Setter Property="Padding" Value="8 5 0 0"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type DataGridCell}">
+                                        <Border Padding="{TemplateBinding Padding}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                                            <ContentPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                        <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="Background" Value="Black"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Height" Value="50"/>
+                            <Setter Property="FontSize" Value="20"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type DataGridColumnHeader}">
+                                        <Grid Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DataGrid.Resources>
+                </DataGrid>
+            </Grid>
+        </StackPanel>
+
+        <StackPanel Name="stkPanelRemoveStudentsForStuAff" Margin="0,200,0,0" Grid.RowSpan="2" Grid.ColumnSpan="2" Visibility="Hidden">
+            <Grid Height="571" Width="1240">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="286*"/>
+                    <RowDefinition Height="285*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="txtBoxSearchInDatagridInRemoveStudentsPNL" Style="{StaticResource placeHolder}" Tag="Search here" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="50" Margin="33,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1174" FontSize="25" KeyUp="txtBoxSearchInDatagridInRemoveStudentsPNL_KeyUp"/>
+                <Image HorizontalAlignment="Left" Height="29" Margin="47,16,0,0" VerticalAlignment="Top" Width="29" Source="Search.png"/>
+                <DataGrid x:Name="DGForStudentsInRemove" RowHeaderWidth="45" Height="501" Margin="33,60,33,0" AutoGenerateColumns="True" ColumnWidth="*" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.RowSpan="2" Foreground="Black" HorizontalGridLinesBrush="Black" CanUserResizeRows="False" CanUserReorderColumns="False" CanUserResizeColumns="False" Background="{x:Null}" AlternatingRowBackground="#FFE4F1EE" FontSize="20" SelectionUnit="CellOrRowHeader" AlternationCount="1" IsReadOnly="True" RowBackground="White" BorderBrush="{x:Null}" RowHeight="40" MinColumnWidth="200" LoadingRow="DGForStudents_LoadingRow" SelectionMode="Single">
+                    <DataGrid.Resources>
+                        <Style TargetType="DataGridCell">
+                            <Style.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="Background" Value="#FFFFC459"/>
+                                </Trigger>
+                            </Style.Triggers>
+                            <Setter Property="BorderThickness" Value="0"/>
+                            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+                            <Setter Property="Padding" Value="8 5 0 0"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type DataGridCell}">
+                                        <Border Padding="{TemplateBinding Padding}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                                            <ContentPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+
+                        <Style BasedOn="{StaticResource {x:Type DataGridRowHeader}}" TargetType="{x:Type DataGridRowHeader}">
+                            <Setter Property="Background" Value="Black"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Height" Value="40"/>
+                            <Setter Property="FontSize" Value="18"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type DataGridRowHeader}">
+                                        <Grid Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                        <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="Background" Value="Black"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Height" Value="50"/>
+                            <Setter Property="FontSize" Value="20"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type DataGridColumnHeader}">
+                                        <Grid Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DataGrid.Resources>
+                </DataGrid>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</UserControl>

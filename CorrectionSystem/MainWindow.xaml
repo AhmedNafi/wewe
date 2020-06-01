@@ -1,0 +1,24 @@
+﻿<Window x:Class="CorrectionSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CorrectionSystem"
+
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1250" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Closed="Window_Closed">
+    <Window.Background>
+        <ImageBrush ImageSource="1-1.jpg" TileMode="FlipX"/>
+    </Window.Background>
+    <Grid>
+
+        <StackPanel Name="home" Margin="0,0,0,0" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="White">
+            <Button x:Name="btnStudentAffairs" Content="Student Affairs" Height="385" FontSize="40" FontWeight="Bold" Background="Black" Foreground="White" Click="btnStudentAffairs_Click"/>
+            <Button x:Name="Mentor" Content="Mentor" Height="386" FontSize="40" FontWeight="Bold" Background="Black" Foreground="White" Click="Mentor_Click"/>
+        </StackPanel>
+
+        <local:ucHomePageForMentor x:Name="locMentor" Margin="-6,0,10,0" Width="1240" Height="771" Visibility="Hidden"></local:ucHomePageForMentor>
+        <local:ucHomePageForStuAff x:Name="locStuAff" Margin="-6,0,10,0" Width="1240" Height="771" Visibility="Hidden"></local:ucHomePageForStuAff>
+    </Grid>
+
+</Window>

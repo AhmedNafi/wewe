@@ -1,0 +1,116 @@
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\CorrectionSystem.exe.config
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\CorrectionSystem.exe
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\CorrectionSystem.pdb
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\CorrectionSystem.csprojAssemblyReference.cache
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\MainWindow.g.cs
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\App.g.cs
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\CorrectionSystem_MarkupCompile.cache
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\CorrectionSystem_MarkupCompile.lref
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\MainWindow.baml
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\CorrectionSystem.g.resources
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\CorrectionSystem.Properties.Resources.resources
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\CorrectionSystem.csproj.GenerateResource.cache
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\CorrectionSystem.csproj.CoreCompileInputs.cache
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\CorrectionSystem.exe
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\CorrectionSystem.pdb
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\App.baml
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucHomePageForStuAff.g.cs
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucHomePageForStuAff.baml
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucDepartmentForStuAff.g.cs
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucDepartmentForStuAff.baml
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\Microsoft.Data.Sqlite.dll
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\SQLitePCLRaw.core.dll
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Buffers.dll
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Memory.dll
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Numerics.Vectors.dll
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\Microsoft.Data.Sqlite.xml
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Buffers.xml
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Memory.xml
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Numerics.Vectors.xml
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\CorrectionSystem.csproj.CopyComplete
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\EntityFramework.dll
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\EntityFramework.SqlServer.dll
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Data.SQLite.dll
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Data.SQLite.EF6.dll
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Data.SQLite.Linq.dll
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\EntityFramework.xml
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\EntityFramework.SqlServer.xml
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Data.SQLite.xml
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Data.SQLite.dll.config
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\CorrectionSystem.db
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\CorrectionSystem_Content.g.cs
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\Dapper.dll
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\Dapper.xml
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucAcademicYearsForStuAff.g.cs
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucAcademicYearsForStuAff.baml
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucCoursesForStuAff.g.cs
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucCoursesForStuAff.baml
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucStudentsForStuAff.g.cs
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucStudentsForStuAff.baml
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucHomePageForMentor.g.cs
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucHomePageForMentor.baml
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucExamsForMentor.g.cs
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucStudentsForMentor.g.cs
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucExamsForMentor.baml
+D:\My Work\graduation project\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucStudentsForMentor.baml
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\CorrectionSystem.db
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\CorrectionSystem.exe.config
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\CorrectionSystem.exe
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\CorrectionSystem.pdb
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\Dapper.dll
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\EntityFramework.dll
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\EntityFramework.SqlServer.dll
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\Microsoft.Data.Sqlite.dll
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\SQLitePCLRaw.core.dll
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Buffers.dll
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Data.SQLite.dll
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Data.SQLite.EF6.dll
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Data.SQLite.Linq.dll
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Memory.dll
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Numerics.Vectors.dll
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\Dapper.xml
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\EntityFramework.xml
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\EntityFramework.SqlServer.xml
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\Microsoft.Data.Sqlite.xml
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Buffers.xml
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Data.SQLite.xml
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Data.SQLite.dll.config
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Memory.xml
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Numerics.Vectors.xml
+F:\System WPF\CorrectionSystem\CorrectionSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\CorrectionSystem.csprojAssemblyReference.cache
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\MainWindow.g.cs
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucAcademicYearsForStuAff.g.cs
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucCoursesForStuAff.g.cs
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucDepartmentForStuAff.g.cs
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucExamsForMentor.g.cs
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucHomePageForMentor.g.cs
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucHomePageForStuAff.g.cs
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucStudentsForMentor.g.cs
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucStudentsForStuAff.g.cs
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\App.g.cs
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\CorrectionSystem_Content.g.cs
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\CorrectionSystem_MarkupCompile.cache
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\CorrectionSystem_MarkupCompile.lref
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\App.baml
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\MainWindow.baml
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucAcademicYearsForStuAff.baml
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucCoursesForStuAff.baml
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucDepartmentForStuAff.baml
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucExamsForMentor.baml
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucHomePageForMentor.baml
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucHomePageForStuAff.baml
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucStudentsForMentor.baml
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\ucStudentsForStuAff.baml
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\CorrectionSystem.g.resources
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\CorrectionSystem.Properties.Resources.resources
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\CorrectionSystem.csproj.GenerateResource.cache
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\CorrectionSystem.csproj.CoreCompileInputs.cache
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\CorrectionSystem.csproj.CopyComplete
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\CorrectionSystem.exe
+F:\System WPF\CorrectionSystem\CorrectionSystem\obj\Debug\CorrectionSystem.pdb
